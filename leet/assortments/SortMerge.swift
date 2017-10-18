@@ -1,6 +1,6 @@
 //
 //  SortMerge.swift
-//  leet1
+//  leet
 //
 //  Created by Hoan Tran on 6/14/17.
 //  Copyright © 2017 Pego Consulting. All rights reserved.

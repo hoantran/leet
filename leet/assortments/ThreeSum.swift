@@ -1,6 +1,6 @@
 //
 //  ThreeSum.swift
-//  leet1
+//  leet
 //
 //  Created by Hoan Tran on 2/7/17.
 //  Copyright © 2017 Pego Consulting. All rights reserved.

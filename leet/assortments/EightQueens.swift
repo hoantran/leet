@@ -1,6 +1,6 @@
 //
 //  EightQueens.swift
-//  leet1
+//  leet
 //
 //  Created by Hoan Tran on 2/7/17.
 //  Copyright © 2017 Pego Consulting. All rights reserved.
@@ -38,7 +38,7 @@ class EightQueens {
             print()
         }
         print("   ", terminator:"")
-        for c in "ABCDEFGH".characters {
+        for c in "ABCDEFGH" {
             print(c, "", terminator:"")
         }
         print("")

@@ -18,6 +18,8 @@ import Foundation
 //LinkedListDoubly.run()
 //LicenseKeyFormatting.run()
 
+TreeNode<Any>.run()
+
 
 
 

@@ -13,7 +13,7 @@ class LicenseKeyFormatting {
     func exe2(_ S: String, _ K: Int) -> String {
         var len: Int = 0
         
-        for c in S.characters {
+        for c in S {
             if c != "-" { len += 1 }
         }
         
@@ -25,7 +25,7 @@ class LicenseKeyFormatting {
         var i = 0
         var result = ""
         
-        for c in S.characters {
+        for c in S {
             if c != "-" {
                 let cap = (String (c)).uppercased()
                 result += cap
@@ -47,13 +47,13 @@ class LicenseKeyFormatting {
     func exe(_ S: String, _ K: Int) -> String {
         var justAlphaNumeric: String = ""
         
-        for c in S.characters {
+        for c in S {
             if c != "-" {
                 justAlphaNumeric += (String (c)).uppercased()
             }
         }
         
-        let charCount = justAlphaNumeric.characters.count
+        let charCount = justAlphaNumeric.count
         var firstGroupLen = charCount % K
         if firstGroupLen == 0 {
             firstGroupLen = K
@@ -68,7 +68,8 @@ class LicenseKeyFormatting {
             let startIndex = justAlphaNumeric.index ( justAlphaNumeric.startIndex, offsetBy: offset)
             let endIndex = justAlphaNumeric.index ( justAlphaNumeric.startIndex, offsetBy: offset + len)
             let range = startIndex ..< endIndex
-            result += justAlphaNumeric.substring(with: range)
+//            result += justAlphaNumeric.substring(with: range)
+            result += String(justAlphaNumeric[range])
             
             offset += len
             len = K
